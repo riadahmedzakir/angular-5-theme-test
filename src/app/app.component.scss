@@ -1,7 +1,10 @@
+h2 {
+    margin: 20px;
+}
 .container {
     position: absolute;
     top: 60px;
-    bottom: 60px;
+    bottom: 40px;
     left: 0;
     right: 0;
 }
@@ -11,7 +14,7 @@
     align-items: center;
     justify-content: center;
     width: 350px;
-    background: #c8ced1;
+    // background: #c8ced1;
 }
 
 .header {
@@ -28,4 +31,14 @@
 
 .card-container mat-card {
     margin-bottom: 20px;
+}
+
+.user-content img {
+    margin: 50px 50px 0px 50px; 
+    width: 70%;
+}
+
+.user-content h1 {
+    margin: 0px 50px 0px 50px; 
+    width: 70%;
 }
