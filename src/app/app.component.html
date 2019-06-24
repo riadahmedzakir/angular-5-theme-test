@@ -25,21 +25,29 @@
         <img src="./../assets/user.png">
         <h1>Jon Doe Smith</h1>
       </div>
+      <mat-toolbar color="primary" class="side-nav-button" (click)="changeRoute('dashboard')">
+        <span>Dashboard</span>
+      </mat-toolbar>
+      <mat-divider></mat-divider>
+      <mat-toolbar color="primary" class="side-nav-button" (click)="changeRoute('heroes')">
+        <span>Heroes</span>
+      </mat-toolbar>
     </mat-sidenav>
 
     <mat-sidenav-content>
       <h2>Simple Cards</h2>
 
       <mat-divider></mat-divider>
-
-      <div fxLayout="row wrap" fxLayoutGap="20px" class="card-container">
+      <router-outlet></router-outlet>
+      <app-messages></app-messages>
+      <!-- <div fxLayout="row wrap" fxLayoutGap="20px" class="card-container">
         <mat-card fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="45" fxFlex.lg="22" fxFlex.xl="22">Simple
           card</mat-card>
         <mat-card fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="45" fxFlex.lg="22" fxFlex.xl="22">Simple
           card</mat-card>
         <mat-card fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="45" fxFlex.lg="22" fxFlex.xl="22">Simple card</mat-card>
         <mat-card fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="45" fxFlex.lg="22" fxFlex.xl="22">Simple card</mat-card>
-      </div>
+      </div> -->
 
     </mat-sidenav-content>
   </mat-sidenav-container>

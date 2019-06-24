@@ -1,0 +1,17 @@
+.hero-component {
+    margin: 20px;
+}
+
+.hero{
+    padding:10px;
+    margin-bottom: 5px;
+}
+
+.hero:hover{
+    background-color: #b2f6ff;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #b2f6ff;
+}
